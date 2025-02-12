@@ -163,6 +163,7 @@ export class RoutePlannerComponent {
     this.checkForContinuous();
     this.checkForSameRoutes();
     this.clearStationsVisited();
+    this.checkForDuplicates();
   }
 
   removeDatafromArray(arr: any, ind: number) {
@@ -211,6 +212,14 @@ export class RoutePlannerComponent {
       }
     }
     this.stationsVisited = arr;
+  }
+
+  checkForDuplicates() {
+    for (let i=0; i<this.routeArray.length; i++) {
+      if (this.routeArray[i][1] === this.routeArray[i][2]) {
+        this.routeArray = this.removeDatafromArray(this.routeArray, i);
+      }
+    }
   }
 
 
