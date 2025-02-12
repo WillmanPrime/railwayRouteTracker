@@ -1,0 +1,226 @@
+{
+    "data" : [
+        {
+            "line" : [
+                {
+                    "Chicago" : "Y","Madison": "N","Rochester": "N","Minneapolis": "N","Sioux Falls": "N","Pierre": "N","Rapid City": "N","Cheyenne": "N","Denver": "Y"
+                },
+                {
+                    "Chicago" : "Y","Rock Island": "N","Des Moines": "N","Omaha": "N","Dodge City": "N","Wichita": "N","Topeka": "N","Kansas City": "N",
+                    "Columbia": "N","Fayetteville": "N"
+                },
+                {
+                    "Chicoutimi": "N", "Quebec City": "N","Montreal": "Y", "Syracuse": "Y", "Pittsburgh":"Y", "Cleveland": "Y"
+                },
+                {
+                    "Del Rio": "Y", "Alpine": "N", "Odessa": "N", "Lubbock": "N", "Amarillo": "N", "Raton": "N", "Denver": "Y"
+                },
+                {
+                    "Flagstaff": "N", "Tucson": "Y", "Magdalena": "N", "Hermosillo": "N", "Los Mochis" : "N"
+                },
+                {
+                    "Houston": "Y", "Austin": "N", "San Antonio": "N","Corpus Christi": "N", "Brownsville": "N", "Monterrey": "N", "Nuevo Laredo": "N", "Del Rio": "Y"
+                },
+                {
+                    "Houston": "Y", "Beaumont": "N", "Shreveport": "N", "Dallas": "N","Abilene": "N","Oklahoma City": "N"
+                },
+                {
+                    "Miami": "Y", "Tampa": "N", "Tallahassee": "N", "Pensacola" :"N","New Orleans": "N", "Houston": "Y"
+                },
+                {
+                    "Miami": "Y", "Augusta": "N", "Atlanta": "N", "Montgomery": "N", "Jackson": "N", "Memphis" : "N", "St. Louis": "N"
+                },
+                {
+                    "Montreal": "Y", "Sudbury": "Y", "Sault Ste. Marie" :"N", "White River": "N", "Thunder Bay": "N", "Duluth" :"N", "Fargo": "N", "Bismarck": "N", "Miles City" : "N",
+                    "Billings": "N", "Great Falls": "N", "Missoula": "N", "Spokane" : "N","Seattle" : "Y"
+                },
+                {
+                    "New York City": "Y", "Montreal" :"Y","Ottawa" : "N", "Val Dor": "N", "Sudbury": "Y", "Great Rapids": "N"
+                },
+                {
+                    "New York City": "Y", "Boston": "N", "Portland, Maine" :"N","Bangor": "N", "Moncton" :"N", "Halifax": "N"
+                },
+                {
+                    "New York City": "Y", "Philadelphia" :"N", "Norfolk": "N", "Durham": "N", "Wilmington": "N", "Charleston" :"N", "Jacksonville" :"N", "Miami": "Y"
+                },
+                {
+                    "New York City": "Y", "Washington DC": "N", "Charlottesville": "N", "Big Lick": "N", "Charlotte": "N", "Knoxville": "N", "Nashville": "N"
+                },
+                {
+                    "New York City": "Y", "Albany" : "N", "Syracuse": "Y", "Buffalo": "N", "Toronto": "Y"
+                },
+                {
+                    "North Platte": "N", "Casper": "N", "Rock Springs" :"N", "Salt Lake City": "Y", "Milford": "N", "Kingman": "N"
+                },
+                {
+                    "Pittsburgh": "Y", "Parkersburg": "N", "Louisville": "N", "Indianapolis" :"N", "Chicago": "Y"
+                },
+                {
+                    "Pittsburgh" :"Y", "Cleveland": "Y", "Toledo": "N", "London": "N", "Toronto": "Y"
+                },
+                {
+                    "San Francisco": "Y", "Sacramento": "Y", "Carson City": "N", "Bodie": "N", "Winnemucca" :"N", "Elko": "N", "Salt Lake City": "Y", "Grand Junction": "N", "Denver": "Y"
+                },
+                {
+                    "San Francisco": "Y", "Los Angeles": "N", "San Diego": "N", "Yuma": "N", "Tucson": "Y", "Deming": "N", "Albuquerque" :"N", "Santa Fe": "Y"
+                },
+                {
+                    "Seattle" :"Y", "Portland, Oregon": "N", "Eugene": "N", "Gold Beach": "N", "Redding": "N", "Sacramento": "Y", "San Francisco": "Y"
+                },
+                {
+                    "Santa Fe": "Y", "El Paso": "N", "Nuevo Casas Grandes": "N", "Chihuahua": "N", "Torreon": "N"
+                },
+                {
+                    "Seattle": "Y", "Baker City": "N", "Nampa": "N", "Idaho Falls": "N", "Salt Lake City": "Y"
+                }
+            ]
+        },
+        {
+            "line": [
+                {
+                    "Frankfurt" : "Y","Cassel": "N","Weimar": "N","Pilsen": "N","Budweis": "N","Linz": "N","Vienna": "N","Prebburg": "N","Budapest": "Y","Pecs": "N","Slavonski Brod": "N","Zagreb": "N", "Trieste": "Y","Venice": "N", "Trent": "N"
+                },
+                {
+                    "Frankfurt" : "Y","Cologne": "N","Gutersloh": "N","Hanover": "N","Magdeburg": "N","Dresden": "N","Prague": "N","Brunn": "N","Zilina": "N","Krattowitz": "N","Breslan": "N","Posen": "N", "Bromberg": "N","Warsaw": "Y"
+                },
+                {
+                    "London" : "Y","Dover": "N","Lille": "N","Brussels": "N","Eindhoven": "N","Amsterdam": "N","Groningen": "N","Bremen": "N","Hamburg": "N","Kolding": "N","Aalborg": "N","Gothenburg": "N", "Halmstad": "N","Copenhagen": "Y"
+                },
+                {
+                    "Porto" : "Y","Corunna": "N","Oviedoz": "N","Leon": "N","Burgos": "N","Bilbao": "N","Bayonne": "N","Bordeaux": "Y","Toulouse": "N","Montpellier": "N","Marseilles": "N","Nice": "N", "Turin": "N","Milan": "N"
+                },
+                {
+                    "London" : "Y","Oxford": "N","Bristol": "N","Plymouth": "N","Swansea": "N","Holyhead": "N","Liverpool": "N","Manchester": "N","Carlisle": "N","Edinburgh": "Y","Aberdeen": "N","Fort William": "Y"
+                },
+                {
+                    "Sarajevo" : "N","Split": "N","Zadar": "N","Trieste": "Y","San Marino": "N","Florence": "N","Grosseto": "N","Rome": "N","Pescara": "N","Foggia": "N","Naples": "N"
+                },
+                {
+                    "Budapest" : "Y","Szombathely": "N","Graetz": "N","Salzburg": "N","Munich": "N","Ulm": "N","Worms": "Y","Strasbourg": "N","Zurich": "N","Geneva": "N"
+                },
+                {
+                    "Cambridge" : "N","Birmingham": "N","York": "N","Edinburgh": "Y","Glasgow": "N","Belfast": "N","Sligo": "N","Galway": "N","Cork": "N","Waterford": "N","Dublin": "N"
+                },
+                {
+                    "Copenhagen" : "Y","Naestved": "N","Schewrin": "N","Berlin": "N","Zielona Gora": "N","Lodz": "N","Warsaw": "Y","Eydtkuhnen": "N","Konigsberg": "N","Danzig": "N","Kotlin": "N","Stettin": "N"
+                },
+                {
+                    "Dijon" : "N","Auxerre": "N","Orleans": "N","Tours": "Y","La Rochelle": "N","Bordeaux": "Y","Limoges": "N","Clermont-Ferrand": "N","Lyons": "N"
+                },
+                {
+                    "Copenhagen" : "Y","Karlskrona": "N","Vimmerby": "N","Jonkoping": "N","Stockholm": "N","Vasteras": "N","Borlange": "N","Karlstad": "N","Christiania": "N","Christianssand": "N","Stavanger": "N","Bergen": "N"
+                },
+                {
+                    "Nuremberg" : "N","Worms": "Y","Luxembourg": "N","Nancy": "N","Rheims": "N","Paris": "N","Caen": "N","Tours": "Y","Nantes": "N","Rennes": "N","Brest": "N"
+                },
+                {
+                    "Porto" : "Y","Salamanca": "N","Zaragosa": "N","Barcelona": "N","Perpignan": "N"
+                },
+                {
+                    "Fort William" : "Y","Thurso": "N"
+                }
+            ]
+        },
+        {
+            "line": [
+                {
+                    "Dakshineshwar": "N", "Baranagar": "N", "Noapara": "N", "Dumdum": "N", "Belgachia": "N", "Shyambazar": "N", "Shobhabazar - Sutanuti": "N", "Girish Park": "N", "Mahatma Gandhi Road": "N", "Central": "N", "Chandni Chowk": "N",
+                    "Esplanade":"Y", "Park Street": "N", "Maidan": "N", "Rabindra Sadan": "N", "Netaji Bhavan": "N", "Jatin Das Park": "N", "Kalighat": "N", "Rabindra Sarobar": "N", "Mahanayak Uttam Kumar (Tollygunge)": "N", "Netaji (Kudghat)": "N", "Masterda Surya Sen (Bansdroni)": "N",
+                    "Gitanjali (Naktala)": "N", "Kavi Nazrul (Garia Bazar)": "N", "Shahid Khudiram (Briji)": "N", "Kavi Subhash (New Garia)": "Y",
+                    "colorCode": "#0000ff"
+                },
+                {
+                    "Salt Lake Sector-V": "N", "Karunamoyee": "N", "Central Park": "N", "City Center": "N", "Bengal Chemical": "N", "Salt Lake Stadium": "N", "Phoolbagan": "N", "Sealdah": "N", "Esplanade": "Y", "Mahakaran": "N", "Howrah": "N", "Howrah Maidan": "N", "colorCode":"#146c43"
+                },
+                {
+                    "Kavi Subhash (New Garia)":"Y", "Satyajit Ray": "N", "Jyotirindra Nandi (Mukundapur)": "N", "Kavi Sukanta (Kalikapur)": "N", "Hemanta Mukhopadhyay (Ruby More)": "N", "colorCode": "#ffa500"
+                },
+                {
+                    "Joka": "N", "Thakurpukur": "N", "Sakher Bazar": "N", "Behala Chowrasta": "N", "Behala Bazar": "N", "Taratala": "N", "Majherhat": "N", "colorCode": "#a020f0"
+                }
+            ]
+        },
+        {
+            "line": [
+                ["Diamond Park", "IIM Calcutta", "Joka", "Thakurpukur", "Sakher Bazar", "Behala Chowrasta", "Behala Bazar", "Taratala", "Majherhat", "Mominpur", "Khidirpur", "Victoria", "Park Street", "Esplanade", "Eden Gardens", "#a020f0", "Yes"],
+                ["Kavi Subhash (New Garia)", "Satyajit Ray", "Jyotirindra Nandi (Mukundpur)", "Kavi Sukanta (Kalikapur)", "Hemanta Mukhopadhyay (Ruby More)", "VIP Bazar", "Ritwik Ghatak (Bantala Road)", "Barun Sengupta (Science City)", "Beleghata", "Gour Kishore Ghosh (Chingrighata)", "IT Centre", "Nabadiganta", "Nazrul Tirtha", "Swapnabhor", "Biswa Bangla Convention Centre", 
+                "Shiksha Tirtha", "Mother's Wax Museum", "Eco Park", "Mangaldeep", "City Centre-2", "Chinar Park", "VIP Road", "Jai Hind", "#ffa500", "Yes"],
+                ["Noapara", "Dumdum Cantonment", "Jessore Road", "Jai Hind", "Birati", "Michael Nagar", "New Barrackpur", "Madhyamgram", "Hridaypur", "Barasat", "#ffde21", "No"],
+                ["Baranagar", "Krishna Kali", "Acharya Prafulla Chandra", "Gandhi Ashram", "Sarat Chandra", "Subhas Nagar", "Rishi Bankim", "Dr. Rajendra Prasad", "Shah Nawaz Khan", "Talpukur", "Mangal Pandey" , "#ff66cc", "No"]
+            ]
+        },
+        {
+            "line":[
+                {
+                    "Whitefield (Kadugodi)": "N", "Hopefarm Channasandra": "N", "Kadugodi Tree Park": "N", "Pattandur Agrahara": "N", "Sri Satya Sai Hospital": "N", "Nallurhalli": "N", "Kundalahalli": "N", "Seetharam Palya": "N", "Hoodi": "N", "Garudacharpalya": "N",
+                    "Singayyanapalya": "N", "Krishnarajapura": "N", "Benniganahalli": "N", "Baiyyappanhalli": "N", "Swami Vivekananda Road": "N", "Indiranagar": "N", "Halasuru": "N", "Trinity": "N", "Mahatma Gandhi Road": "N", "Cubbon Park": "N", "Dr. B. R. Ambedkar Station, Vidhan Soudha": "N",
+                    "Sir M. Visvesvaraya Station, Central College": "N", "Nadaprabhu Kempegowda Station, Majestic": "Y", "Krantivira Sangolli Rayanna Railway Station": "N", "Magadi Road": "N", "Sri Balagangadharanatha Swamiji Station, Hosahalli": "N", "Vijayanagara": "N", "Attiguppe": "N", "Deepanjali Nagar": "N",
+                    "Mysuru Road": "N", "Pantharapalya - Nayandahalli": "N", "Rajarajeshwari Nagar": "N", "Jnanabharati": "N", "Pattanagere": "N", "Kengeri Bus Terminal": "N", "Kengeri": "N", "Challaghatta": "N", "colorCode": "#a020f0"
+                },
+                {
+                    "Madavara": "N", "Chikkabidarakallu": "N", "Manjunath Nagar": "N", "Nagasandra": "N", "Dasarahalli": "N", "Jalahalli": "N", "Peenya Industry": "N", "Peenya": "N", "Goraguntepalya": "N", "Yeshvanthpura": "N", "Sandal Soap Factory": "N", "Mahalakshmi": "N", "Rajajinagara": "N", "Mahakavi Kuvempu Road": "N",
+                    "Srirampura": "N", "Mantri Square Sampige Road": "N", "Nadaprabhu Kempegowda Station, Majestic":"Y", "Chickpete": "N", "Krishna Rajendra Market": "N", "National College": "N", "Lalbagh": "N", "South End Cirle": "N", "Jayanagar": "N", "Rashtreeya Vidyalaya Road": "N", "Banashankari": "N",
+                    "Jaya Prakash Nagar": "N", "Yelachenahalli": "N", "Konanakunte Cross": "N", "Doddakallasandra": "N", "Vajarahalli": "N", "Thalaghattapura": "N", "Silk Institute": "N", "colorCode":"#146c43"
+                }
+            ]
+        },
+        {
+            "line": [
+                ["Rashtreeya Vidyalaya Road", "Ragigudda", "Jayadeva Hospital", "BTM Layout", "Central Silk Board", "Bommanahalli (Roopena Agrahara)", "Hongasandra (Garvebhavi Palya)", "Kudlu Gate", "Singasandra", "Hosa Road", "Beratena Agrahara", "Electronics City", "Infosys Foundation Konappana Agrahara", "Huskur Road",
+                "Biocon Hebbagodi", "Delta Electronics Bommasandra", "#ffde21", "No"],
+                ["Nagawara", "Kadugundanahalli", "Venkateshpura", "Tannery Road", "Pottery Town", "Cantonment Railway Station", "Shivajinagar", "Mahatma Gandhi Road", "National Military School", "Langford Town", "Lakkasandra", "Dairy Circle", "Tavarekere", "Jayadeva Hospital", "JP Nagar 4th Phase", "IIMB", "Hulimavu",
+                "Kalena Agrahara", "#ff66cc", "No" ],
+                ["Central Silk Board", "HSR Layout", "Agara", "Ibbaluru", "Bellanduru", "Kadubeesanahalli", "Kodibeesanahalli", "Marathahalli", "ISRO", "Doddanekundi", "DRDO Sports Complex", "Saraswathi Nagar", "Krishnarajapura", "Kasturi Nagar", "Horamavu", "HRBR Layout", "Kalyan Nagar", "HBR Layout", "Nagawara",
+                "Veerannapalya", "Kempapura", "Hebbala", "Kodigehalli", "Jakkur Cross", "Yelahanka", "Bagalur Cross", "Doddajala", "Airport City", "KIAL Terminals", "#0000ff", "No"],
+                ["Kempapura", "Hebbala", "Patelappa Layout", "BEL Circle", "Bahubhali Nagara", "Peenya", "Kanteerava Studio", "Freedom Fighters Cross", "Chowdeshwari Nagara", "Sumanahalli Cross", "Nagarbhavi BDA Complex", "Dr. Ambedkar Institute of Technology", "Vinayaka Layout", "Nagarabhavi Circle", "Mysuru Road",
+                "PES University", "Hosakerahalli Cross", "Kamakya Bus Depot", "Kadirenahalli Cross", "Jaya Prakash Nagar", "JP Nagar 5th Phase", "JP Nagar 4th Phase", "#ffa500", "No"],
+                ["Hosahalli", "K H B Colony", "Vinayaka Nagara", "Sumanahalli Cross", "Sunkadakatte", "Herohalli", "Byadarahalli", "Forest Gate", "Kadabagere", "#acada8", "No"],
+                ["Hebbala", "Veterinary College", "Gangenahalli", "Mekhri Circle", "Guttahalli Palace", "Bengaluru Golf Course", "Basaveshwara Circle", "Krishna Rajendra Circle", "Town Hall", "Shanthinagara", "NIMHANS", "Dairy Circle", "Koramangala II Block", "Koramangala III Block", "Jakkasandra", "Agara", "Ibbaluru",
+                "Bellanduru Gate", "Kaikondrahalli", "Doddakannelli", "Karmelaram", "Ambedkar Nagara", "Kodathi Gate", "Muthanalluru Cross", "Dommasandra", "Sompura", "Kada Agrahara Road", "Sarjapura", "#ff0000", "No"]
+            ]
+        },
+        {
+            "line": [
+                ["New York City", "Smith Stop", "Wilson Station", "Franklin Rest", "Pastoors Rest", "Pittsburgh"],
+                ["New York City", "Campbell Train Station", "Jones Terminal", "Albany", "White Train Station", "Eliot Station", "Hobbs Train Station", "Boston"],
+                ["Sioux Falls", "Hobbs Rest", "Cook Terminal", "Lopez Terminal", "Parker Stop", "Bismarck"],
+                ["San Francisco", "Cox Station", "Cook Train Station", "Wright Train Station", "Los Angeles"],
+                ["Pittsburgh", "Stevens Train Station", "Ward Rest", "Moore Rest", "Syracuse", "Edison Terminal", "Cole Train Station", "Montreal"],
+                ["Atlanta", "Young Rest", "Ward Station", "Thompson Rest", "Mason Station", "New Orleans"],
+                ["Louisville", "Malone Rest", "Rice Station", "Jenkins Station", "St. Louis", "Eliot Rest", "Rock Island", "Steward Train Station", "Collins Stop", "Root Train Station", "Chicago"],
+                ["Chicago", "Stevens Station", "Brown Stop", "Bishop Rest", "Campbell Terminal", "Pittsburgh"],
+                ["Salt Lake City", "Elko", "Thomas Station", "Johnson Stop", "Lewis Station", "Carson City"],
+                ["Philadelphia", "Howard Rest", "David Train Station", "Robinson Train Station", "Chaplin Train Station", "Charlotte"],
+                ["Fayetteville", "Taylor Station", "Stevens Terminal", "Hilton Rest", "Walker Terminal", "Jackson"],
+                ["San Diego", "Jenkins Terminal", "Hilton Stop", "Taylor Train Station", "King Train Station", "Cooper Station", "Salt Lake City"],
+                ["Tucson", "Thompson Train Station", "Iman Station", "Kingman", "Franklin Train Station", "Foster Train Station", "Archer Station", "Milford"],
+                ["Jackson", "Norris Station", "Roberts Rest", "Eliot Stop", "Parker Terminal", "Nashville"],
+                ["Chihuahua", "Hierra Train Station", "Duran Rest", "Jiminez Terminal", "Cruz Station", "Los Mochis"],
+                ["Charlotte", "Chaplin Train Station", "Thomas Stop", "Pastoors Train Station", "Augusta"],
+                ["Miami", "West Rest", "Cox Terminal", "Cox Train Station", "Anderson Rest", "Clark Rest", "Lopez Stop", "Atlanta"],
+                ["Toronto", "Franklin Station", "Archer Train Station", "Hilton Terminal", "Harris Station", "Carter Terminal", "Foster Terminal", "Montreal"],
+                ["Nashville", "Norris Train Station", "West Terminal", "Allen Rest", "Johnson Rest", "Charlotte"],
+                ["Denver", "Rice Train Station", "Steward Stop", "Thompson Terminal", "West Stop", "Iman Terminal", "Jones Station", "Oklahoma City", "Robinson Stop", "Lopez Rest", "Fayetteville"]
+            ]
+        },
+        {
+            "line": [
+               ["San Marino", "Serra Stop", "Montanari Station", "Pescara"],
+               ["Tours", "Pelletier Train Station", "Morel Terminal", "Nantes"],
+               ["Rheims", "Morin Station", "Simon Terminal", "Baptiste Rest", "Auxerre"],
+               ["Dublin", "Gallagher Terminal", "Matthews Terminal", "Belfast"],
+               ["London", "Cunningham Terminal", "O'Reilly Station", "Bristol"],
+               ["Luxembourg", "Roger Stop", "Fournier Rest", "Vincent Train Station", "Lille"],
+               ["Florence", "Marchetti Stop", "Parisi Rest", "Esposito Rest", "Frasca Terminal", "Farina Train Station", "Milan"],
+               ["Naples", "Ruggiero Terminal", "Rome", "D'angelo Stop", "Colombo Train Station", "Amato Terminal", "Grosseto", "Neri Stop", "Florence"],
+               ["Oxford", "Gordon Terminal", "Douglas Station", "Birmingham", "Hogan Rest", "Cambridge"],
+               ["Manchester", "Jennings Rest", "Turner Terminal", "Edinburgh"],
+               ["Galway", "Knowles Stop", "Lynch Stop", "Dublin"],
+               ["Marseilles", "Brun Terminal", "Garnier Stop", "Mathieu Terminal", "Nice"],
+               ["Dijon", "Luc Rest", "Zoller Stop", "Geneva"],
+               ["Rennes", "Rousseau Terminal", "Deschamps Station", "Segal Terminal", "Brest"],
+               ["Barcelona", "Castillo Terminal", "Santiago Rest", "Faucheux Rest", "Roger Terminal", "Toulouse"]
+            ]
+        }
+    ]
+}

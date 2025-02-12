@@ -1,0 +1,20 @@
+<div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">At a Glance: {{locationVal}}</h5>
+            <button class="btn btn-danger" style="right: 2%; position: absolute;" data-bs-dismiss="modal">X</button>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li>Operational Lines: {{operationalLineCount}}</li>
+                @if (locationVal === 'Americas' || locationVal === 'Europe' ) {
+                    <li>Feeder Train Lines: {{feederCount}}</li>
+                } @else {
+                    <li>Under Construction Lines: {{feederCount}}</li>
+                }
+                <li>Total Stations: {{stationCount}}</li>
+                <li>Interchangeable Stations: {{interchangeCount}}</li>
+            </ul>
+        </div>
+    </div>
+</div>

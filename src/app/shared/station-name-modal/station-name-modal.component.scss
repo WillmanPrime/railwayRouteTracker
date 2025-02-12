@@ -1,0 +1,31 @@
+.button-pad {
+    margin: 5px;
+}
+
+.button-text-color-w{
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color:#cfe2ff;
+    color: black;
+}
+
+.dropdown-custom{
+    max-height: 20rem;
+    overflow: auto;
+}
+
+.btn-secondary:hover{
+    border: 2px solid red;
+}
+
+.custom-dd {
+    width: 90%;
+    position: absolute;
+    left: 0;
+    max-height: 15rem;
+    overflow: auto;
+    top: 100%;
+    margin-top: 0.5rem;
+}

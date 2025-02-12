@@ -1,0 +1,69 @@
+<body style="background-color: aliceblue;">
+    <div style="float: left;">
+        @if (!collapsed) {<div style="width:50%;">
+            <button class="btn btn-danger" style="align-items: right;" (click)="collapsed = true;">
+                << </button>
+                    <app-side-nav></app-side-nav>
+        </div>}
+        @else {
+        <button class="btn btn-success" (click)="collapsed = false;" style="float: left">>></button>
+        }
+    </div>
+    @if (ucline !== 'Feeder') {
+        <h1 style="text-align: center; margin-top: 1rem; padding-top: 2rem;">List of Under Construction and Planned Lines</h1>
+    } @else {
+        <h1 style="text-align: center; margin-top: 1rem; padding-top: 2rem;">List of Feeder Train Services</h1>
+    }
+    <h3 style="text-align: center; text-decoration: overline; margin-top: 1rem;">{{locationDisplay}}</h3>
+
+    <div class="accordion" style="margin: auto;" [ngStyle]="{'width': !collapsed ? '70%'  : '90%'}" id="accordionPanelsStayOpenExample">
+        @for (item of stationList; track item; let i = $index) {
+            <div class="accordion-item" style="padding-bottom: 5px;">
+                <h2 class="accordion-header"  id="panelsStayOpen-headingOne-{{i}}">
+                @if (ucline === "UC") {
+                  <button [ngStyle]="{'background-color': item[item.length-2] ? item[item.length-2]: ''}" style="color: white;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#panelsStayOpen-collapseOne-' + i" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                    <strong>{{stationList[i][0]}} - {{stationList[i][stationList[i].length-3]}}</strong>
+                  </button>
+                } @else {
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#panelsStayOpen-collapseOne-' + i" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                        <strong>{{stationList[i][0]}} - {{stationList[i][stationList[i].length-1]}}</strong>
+                    </button>
+                }
+                </h2>
+                <div id="panelsStayOpen-collapseOne-{{i}}" class="accordion-collapse collapse" aria-labelledby="'panelsStayOpen-headingOne'+i">
+                  <div class="accordion-body" style="overflow: auto;">
+                    <table class="table " style="border-left: 2px;">
+                      <tbody>
+                        <tr>
+                          @for (val of stationList[i]; track val; let j=$index) {
+                            @if (val !== "Yes" && val !== "No" && !val.includes('#')) {
+                              @if (j%2 === 0) {
+                                <td>{{val}}</td>
+                              } @else {
+                                <td></td>
+                              }
+                            }
+                          }
+                        </tr>
+                        <tr>
+                          @for (val of stationList[i]; track val; let j=$index) {
+                            @if (val !== "Yes" && val !== "No" && !val.includes('#')) {
+                              @if (j%2 === 1) {
+                                <td>{{val}}</td>
+                              } @else {
+                                <td></td>
+                              }
+                            }
+                          }
+                        </tr>
+                      </tbody>
+                    </table>
+                    @if (stationList[i][stationList[i].length -1] === "Yes") {
+                        <i>This line is partially operational</i>
+                    }
+                  </div>
+                </div>
+            </div>
+        }
+      </div>
+</body>

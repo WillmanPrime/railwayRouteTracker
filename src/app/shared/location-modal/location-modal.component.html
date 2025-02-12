@@ -1,0 +1,67 @@
+<div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-content">
+        @if(window) {
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Select Location
+                @if (feedline || constLine) {
+                (options filtered based on portal selection)
+                }
+            </h5>
+
+            <button class="btn btn-danger" style="right: 2%; position: absolute;" data-bs-dismiss="modal">X</button>
+        </div>
+        } @else {
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+            <button class="btn btn-danger" style="right: 2%; position: absolute;" data-bs-dismiss="modal">X</button>
+        </div>
+        }
+        <div class="modal-body">
+            @if(window) {
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <span style="margin-right: 1rem;"><b>Select your location: </b></span>
+                @if (!constLine) {
+                <div class="form-check form-check-inline" style="margin-left: 5px;">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="Americas" [(ngModel)]="locationVal" [disabled]="constLine">
+                    <label class="form-check-label" for="inlineRadio1"
+                        [ngStyle]="{'font-weight': locationVal ==='Americas' ? 'bold' : '' }">Americas (Game
+                        Routes)</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="Europe" [(ngModel)]="locationVal" [disabled]="constLine">
+                    <label class="form-check-label" for="inlineRadio2"
+                        [ngStyle]="{'font-weight': locationVal ==='Europe' ? 'bold' : '' }">Europe (Game Routes)</label>
+                </div>
+                }
+                @if (!feedline) {
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="Kolkata" [(ngModel)]="locationVal" [disabled]="feedline">
+                    <label class="form-check-label" for="inlineRadio2"
+                        [ngStyle]="{'font-weight': locationVal ==='Kolkata' ? 'bold' : '' }">Kolkata Metro</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="Bengaluru" [(ngModel)]="locationVal" [disabled]="feedline">
+                    <label class="form-check-label" for="inlineRadio2"
+                        [ngStyle]="{'font-weight': locationVal ==='Bengaluru' ? 'bold' : '' }">Namma Metro</label>
+                </div>
+                }
+            </div>
+
+            } @else {
+            Location cannot be changed from this page. Go back to Dashboard?
+            }
+        </div>
+        <div class="modal-footer">
+
+            @if(window) {
+            <button class="btn btn-success" (click)="confirmLocation()" data-bs-dismiss="modal">Confirm</button>
+            } @else {
+            <button class="btn btn-success" routerLink="/home" data-bs-dismiss="modal">Go to Dashboard</button>
+            }
+        </div>
+    </div>
+</div>

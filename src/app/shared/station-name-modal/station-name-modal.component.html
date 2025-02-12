@@ -1,0 +1,63 @@
+<div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Select Station in {{location}}</h5>
+      <button class="btn btn-danger" style="right: 2%; position: absolute;" data-bs-dismiss="modal">X</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-check form-switch" style="margin-bottom: 2rem;">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+          [(ngModel)]="searchByStationName" (ngModelChange)="getAllStationsofLLine()">
+        <label class="form-check-label" for="flexSwitchCheckDefault">Enter Station Name</label>
+      </div>
+      @if (!searchByStationName) {
+      <table class="table">
+        <tr>
+          @for (item of stationData; track item; let i=$index) {
+          <span class="dropdown">
+            @if (!item.colorCode) {
+            <button class="btn btn-primary dropdown-toggle button-pad" type="button" id="dropdownMenuButton"
+              data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{stationList[i][0]}} - {{stationList[i][stationList[i].length -1 ]}}
+            </button>
+            } @else {
+            <button class="btn btn-secondary dropdown-toggle button-pad button-text-color-w"
+              [ngStyle]="{'background-color': item.colorCode ? item.colorCode: ''}" type="button"
+              id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              {{stationList[i][0]}} - {{stationList[i][stationList[i].length -2 ]}}
+            </button>
+            }
+            <div class="dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuButton">
+              @for (val of stationList[i]; track val) {
+              @if (val !== 'colorCode') {
+              <a [routerLink]="['/station/', location, val]" class="dropdown-item" data-bs-dismiss="modal"
+                [ngStyle]="{'text-decoration': item[val] === 'Y' ? 'underline' : ''}">{{val}}</a>
+              }
+              }
+            </div>
+          </span>
+          }
+        </tr>
+      </table>
+      } @else {
+        <div class="input-group">
+          <input type="text" placeholder="Type Station Name" class="form-control" aria-label="Text input with dropdown button" [(ngModel)]="filterWord" (ngModelChange)="filterData()">
+          <div class="input-group-append">
+            <!-- <button class="btn btn-outline-secondary " type="button" aria-haspopup="true" aria-expanded="false">Dropdown</button> -->
+            @if (filterWord !== '') {
+            <div class="dropdown-menu show custom-dd">
+              <!-- <a class="dropdown-item" href="#">Action</a> -->
+              @for (val of filteredData; track val) {
+                <a class="dropdown-item" [routerLink]="['/station/', location, val]" data-bs-dismiss="modal">{{val}}</a>
+              }
+            </div>
+          }
+          </div>
+        </div>
+
+      }
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+</div>
