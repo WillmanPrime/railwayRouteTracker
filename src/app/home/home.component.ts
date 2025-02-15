@@ -3,6 +3,7 @@ import { AfterViewChecked, AfterViewInit, Component, OnChanges, OnInit, ViewChil
 import { FormsModule } from '@angular/forms'
 import { RouterLink } from '@angular/router';
 import { StationNameModalComponent } from '../shared/station-name-modal/station-name-modal.component';
+import { ServicesService } from '../services/services.service';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,7 @@ import { StationNameModalComponent } from '../shared/station-name-modal/station-
 })
 export class HomeComponent implements OnInit {
 
-  constructor() {}
+  constructor(private serv: ServicesService) {}
   
   locationVal: any;
   val: any = '';
@@ -20,6 +21,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.setLocation();
+    this.serv.setRoutePlannerSource(null);
+    this.serv.setRoutePlannerDest(null);
   }  
 
   setLocation() {

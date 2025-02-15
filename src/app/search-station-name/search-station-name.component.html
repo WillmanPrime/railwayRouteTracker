@@ -51,10 +51,10 @@
             }
             <tr>
                 <td colspan="3">
-                    <button style="width: 45%; float: left;"  class="btn btn-success" data-bs-toggle="modal"
+                    <button style="width: 45%; float: left;" class="btn btn-success" data-bs-toggle="modal"
                         data-bs-target="#redirectToRouteModal" (click)="valforRM = 'Source'">
                         Set as Source Station
-                    </button> 
+                    </button>
                     <button style="width: 45%; float: right;" class="btn btn-danger" data-bs-toggle="modal"
                         data-bs-target="#redirectToRouteModal" (click)="valforRM = 'Destination'">
                         Set as Destination Station
@@ -118,7 +118,7 @@
 </div>
 <div class="modal fade" id="redirectToRouteModal" tabindex="-1" role="dialog" aria-labelledby="stationNameModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header" style="width: 100%;">
                 <h5>Warning</h5>
@@ -131,6 +131,9 @@
             </div>
 
             <div class="modal-footer">
-                <button class="btn btn-success" routerLink="/routePlanner" data-bs-dismiss="modal" (click)="setValuesforRoutePlanner()">Go to Route Planner</button>
+                <button class="btn btn-success" routerLink="/routePlanner" data-bs-dismiss="modal"
+                    (click)="setValuesforRoutePlanner()">Go to Route Planner</button>
             </div>
         </div>
+    </div>
+</div>

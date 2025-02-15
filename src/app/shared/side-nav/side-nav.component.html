@@ -1,6 +1,6 @@
 <nav class="nav flex-column nav-tabs" style=" font-size: large; text-align: center;">
     <div class="navlinkclass">
-        <div class="nav-link " routerLink="/home">Back to Dashboard</div>
+        <div class="nav-link " data-bs-toggle="modal" data-bs-target="#dashboardConfirm">Back to Dashboard</div>
     </div>
     <div class="navlinkclass">
         <div class="nav-link " data-bs-target="#gotolocation" data-bs-toggle="modal" (click)="setLocation()">Change
@@ -11,16 +11,17 @@
             Station</div>
     </div>
     @if (!feedline) {
-        <div class="navlinkclass" >
-            <div class="nav-link " (click)="redirectToFeeder()">Feeder / UC Lines</div>
-        </div>
+    <div class="navlinkclass">
+        <div class="nav-link " (click)="redirectToFeeder()">Feeder / UC Lines</div>
+    </div>
     } @else {
-        <div class="navlinkclass">
-            <div class="nav-link "  (click)="redirectToMainLines()">Main / Current Lines</div>
-        </div>
+    <div class="navlinkclass">
+        <div class="nav-link " (click)="redirectToMainLines()">Main / Current Lines</div>
+    </div>
     }
     <div class="navlinkclass">
-            <div class="nav-link " (click)="MoreInfoModal.setLocation()" data-bs-target="#gotomoreinfo" data-bs-toggle="modal">At a Glance</div>
+        <div class="nav-link " (click)="MoreInfoModal.setLocation()" data-bs-target="#gotomoreinfo"
+            data-bs-toggle="modal">At a Glance</div>
     </div>
 </nav>
 
@@ -37,4 +38,23 @@
 <div class="modal fade" id="gotomoreinfo" tabindex="-1" role="dialog" aria-labelledby="stationNameModalLabel"
     aria-hidden="true">
     <app-more-info-modal></app-more-info-modal>
+</div>
+
+<div class="modal fade" id="dashboardConfirm" tabindex="-1" role="dialog" aria-labelledby="dashboardConfirmLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Warning</h5>
+                <button class="btn btn-danger" style="right: 2%; position: absolute;" data-bs-dismiss="modal">X</button>
+            </div>
+            <div class="modal-body">
+                Go back to Dashboard?<br>
+                All item selections will be reverted.
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" routerLink="/home" data-bs-dismiss="modal">Go to Dashboard</button>
+            </div>
+        </div>
+    </div>
 </div>
