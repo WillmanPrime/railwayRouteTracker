@@ -56,7 +56,7 @@ export class SearchStationNameComponent {
   }
 
   setValuesforRoutePlanner() {
-    if (this.valforRM === 'src') {
+    if (this.valforRM === 'Source') {
       this.serv.setRoutePlannerSource(this.stationName);
     } else {
       this.serv.setRoutePlannerDest(this.stationName);

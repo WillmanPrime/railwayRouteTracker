@@ -48,23 +48,16 @@
                 }
                 }
             </tr>
-            <tr>
-                <td colspan="3"></td>
-            </tr>
             }
             <tr>
                 <td colspan="3">
-                    <button style="width: 100%" class="btn btn-success" data-bs-toggle="modal"
-                        data-bs-target="#redirectToRouteModal" (click)="valforRM = 'src'">
-                        << Set as Source Station >>
-                    </button>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    <button style="width: 100%" class="btn btn-danger" data-bs-toggle="modal"
-                        data-bs-target="#redirectToRouteModal" (click)="valforRM = 'dest'">
-                        << Set as Destination Station >>
+                    <button style="width: 45%; float: left;"  class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#redirectToRouteModal" (click)="valforRM = 'Source'">
+                        Set as Source Station
+                    </button> 
+                    <button style="width: 45%; float: right;" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#redirectToRouteModal" (click)="valforRM = 'Destination'">
+                        Set as Destination Station
                     </button>
                 </td>
             </tr>
@@ -133,11 +126,11 @@
             </div>
 
             <div class="modal-body" style="overflow: auto;">
-                You are being redirected to Route Planner portal. Continue?
+                You are being redirected to Route Planner portal. Continue?<br>
+                You are about to set <i>{{stationName}}</i> as {{valforRM}} station.
             </div>
 
             <div class="modal-footer">
-                <button class="btn btn-danger" data-bs-dismiss="modal">No</button>
-                <button class="btn btn-success" routerLink="/routePlanner" data-bs-dismiss="modal" (click)="setValuesforRoutePlanner()">Yes</button>
+                <button class="btn btn-success" routerLink="/routePlanner" data-bs-dismiss="modal" (click)="setValuesforRoutePlanner()">Go to Route Planner</button>
             </div>
         </div>
