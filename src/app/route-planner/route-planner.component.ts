@@ -26,6 +26,19 @@ export class RoutePlannerComponent {
 
   constructor(private serv: ServicesService, private router: Router) {
     this.location = sessionStorage.getItem('Location');
+    this.serv.getRoutePlannerSource().subscribe({
+      next: (res: any)=> {
+        this.sourceStation = res;
+        this.serv.setRoutePlannerSource(null);
+      }
+    });
+    this.serv.getRoutePlannerDest().subscribe({
+      next: (res: any)=> {
+        this.destinationStation = res;
+        this.serv.setRoutePlannerDest(null);
+      }
+    });
+
     this.getStationDetails();
   }
 

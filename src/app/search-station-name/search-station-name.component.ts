@@ -11,6 +11,7 @@ import { NgStyle } from '@angular/common';
   styleUrl: './search-station-name.component.scss'
 })
 export class SearchStationNameComponent {
+  valforRM = '';
   stationName: any;
   location: any;
   stationDetails: any = [];
@@ -52,6 +53,14 @@ export class SearchStationNameComponent {
   setRouteDetails(val: any, list: any) {
     this.tempTable = val;
     this.tempTableArr = list;
+  }
+
+  setValuesforRoutePlanner() {
+    if (this.valforRM === 'src') {
+      this.serv.setRoutePlannerSource(this.stationName);
+    } else {
+      this.serv.setRoutePlannerDest(this.stationName);
+    }
   }
   
   

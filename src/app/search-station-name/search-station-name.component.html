@@ -13,34 +13,61 @@
         <tbody>
             <tr>
                 <td class="width-low"></td>
-                <td >
+                <td>
                     <div style="font-size: 36pt; text-align: center; font-weight: bolder;">{{stationName}}</div>
                 </td>
                 <td class="width-low"></td>
             </tr>
             @for (item of stationDetails; track item; let i=$index) {
-                <tr>
-                    @if(stationList[i][0][0] === stationName) {
-                        <td class="width-zero">-</td>
-                    } @else {
-                        <td class="width-low" (click)="stationName = stationList[i][0][0];getStationData()" [routerLink]="['/station', location, stationList[i][0][0]]">{{stationList[i][0][0]}}</td>
-                    }
-                    <td class="width-zero"><button class="btn btn-link" data-bs-target="#routeModal" data-bs-toggle="modal" (click)="setRouteDetails(item, stationList[i][0])">(line info)</button></td>
-                    @if (!item.colorCode) {
-                        @if(stationList[i][0][stationList[i][0].length-1] === stationName) {
-                            <td class="width-zero">-</td>
-                        } @else {
-                            <td class="width-low" data-bs-toggle="modal" (click)="stationName = stationList[i][0][stationList[i][0].length-1];getStationData()" [routerLink]="['/station', location, stationList[i][0][stationList[i][0].length-1]]">{{stationList[i][0][stationList[i][0].length-1]}}</td>
-                        }
-                    } @else {
-                        @if(stationList[i][0][stationList[i][0].length-2] === stationName) {
-                            <td class="width-zero">-</td>
-                        } @else {
-                            <td class="width-low" data-bs-toggle="modal" (click)="stationName = stationList[i][0][stationList[i][0].length-2];getStationData()" [routerLink]="['/station', location, stationList[i][0][stationList[i][0].length-2]]">{{stationList[i][0][stationList[i][0].length-2]}}</td>
-                        }
-                    }
-                </tr>
+            <tr>
+                @if(stationList[i][0][0] === stationName) {
+                <td class="width-zero">-</td>
+                } @else {
+                <td class="width-low" (click)="stationName = stationList[i][0][0];getStationData()"
+                    [routerLink]="['/station', location, stationList[i][0][0]]">{{stationList[i][0][0]}}</td>
+                }
+                <td class="width-zero"><button class="btn btn-link" data-bs-target="#routeModal" data-bs-toggle="modal"
+                        (click)="setRouteDetails(item, stationList[i][0])">(line info)</button></td>
+                @if (!item.colorCode) {
+                @if(stationList[i][0][stationList[i][0].length-1] === stationName) {
+                <td class="width-zero">-</td>
+                } @else {
+                <td class="width-low" data-bs-toggle="modal"
+                    (click)="stationName = stationList[i][0][stationList[i][0].length-1];getStationData()"
+                    [routerLink]="['/station', location, stationList[i][0][stationList[i][0].length-1]]">
+                    {{stationList[i][0][stationList[i][0].length-1]}}</td>
+                }
+                } @else {
+                @if(stationList[i][0][stationList[i][0].length-2] === stationName) {
+                <td class="width-zero">-</td>
+                } @else {
+                <td class="width-low" data-bs-toggle="modal"
+                    (click)="stationName = stationList[i][0][stationList[i][0].length-2];getStationData()"
+                    [routerLink]="['/station', location, stationList[i][0][stationList[i][0].length-2]]">
+                    {{stationList[i][0][stationList[i][0].length-2]}}</td>
+                }
+                }
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+            </tr>
             }
+            <tr>
+                <td colspan="3">
+                    <button style="width: 100%" class="btn btn-success" data-bs-toggle="modal"
+                        data-bs-target="#redirectToRouteModal" (click)="valforRM = 'src'">
+                        << Set as Source Station >>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button style="width: 100%" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#redirectToRouteModal" (click)="valforRM = 'dest'">
+                        << Set as Destination Station >>
+                    </button>
+                </td>
+            </tr>
         </tbody>
     </table>
 </div>
@@ -50,41 +77,67 @@
         <div class="modal-content">
             <div class="modal-header" style="width: 100%;">
                 @if (!tempTableArr.includes('colorCode')) {
-                    <h5 class="modal-title" id="exampleModalLabel">Route Details (<i>{{tempTableArr[0]}} - {{tempTableArr[tempTableArr.length-1]}}</i>)</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Route Details (<i>{{tempTableArr[0]}} -
+                        {{tempTableArr[tempTableArr.length-1]}}</i>)</h5>
                 } @else {
-                    <h5 class="modal-title" id="exampleModalLabel">Route Details (<i>{{tempTableArr[0]}} - {{tempTableArr[tempTableArr.length-2]}}</i>)</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Route Details (<i>{{tempTableArr[0]}} -
+                        {{tempTableArr[tempTableArr.length-2]}}</i>)</h5>
                 }
                 <button class="btn btn-danger" style="right: 2%; position: absolute;" data-bs-dismiss="modal">X</button>
             </div>
-            
+
             <div class="modal-body" style="overflow: auto;">
                 <table class="table " style="border-left: 2px;">
-                      <tbody>
+                    <tbody>
                         <tr>
-                          @for (val of tempTableArr; track val; let j=$index) {
+                            @for (val of tempTableArr; track val; let j=$index) {
                             @if (val !== 'colorCode') {
-                              @if (j%2 === 0) {
-                                <td [routerLink]="['/station', location, val]" data-bs-toggle="modal" (click)="stationName = val;getStationData()" [ngStyle]="{'text-decoration': tempTable[val] === 'Y' ? 'underline' : '', 'color': val === stationName ? 'red': ''}">{{val}}</td>
-                              } @else {
-                                <td></td>
-                              }
+                            @if (j%2 === 0) {
+                            <td [routerLink]="['/station', location, val]" data-bs-toggle="modal"
+                                (click)="stationName = val;getStationData()"
+                                [ngStyle]="{'text-decoration': tempTable[val] === 'Y' ? 'underline' : '', 'color': val === stationName ? 'red': ''}">
+                                {{val}}</td>
+                            } @else {
+                            <td></td>
                             }
-                          }
+                            }
+                            }
                         </tr>
                         <tr>
-                          @for (val of tempTableArr; track val; let j=$index) {
+                            @for (val of tempTableArr; track val; let j=$index) {
                             @if (val !== 'colorCode') {
-                              @if (j%2 === 1) {
-                                <td [routerLink]="['/station', location, val]" data-bs-toggle="modal" (click)="stationName = val;getStationData()" [ngStyle]="{'text-decoration': tempTable[val] === 'Y' ? 'underline' : '' , 'color': val === stationName ? 'red': ''}">{{val}}</td>
-                              } @else {
-                                <td></td>
-                              }
+                            @if (j%2 === 1) {
+                            <td [routerLink]="['/station', location, val]" data-bs-toggle="modal"
+                                (click)="stationName = val;getStationData()"
+                                [ngStyle]="{'text-decoration': tempTable[val] === 'Y' ? 'underline' : '' , 'color': val === stationName ? 'red': ''}">
+                                {{val}}</td>
+                            } @else {
+                            <td></td>
                             }
-                          }
+                            }
+                            }
                         </tr>
-                      </tbody>
-                    </table>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
 </div>
+<div class="modal fade" id="redirectToRouteModal" tabindex="-1" role="dialog" aria-labelledby="stationNameModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="width: 100%;">
+                <h5>Warning</h5>
+                <button class="btn btn-danger" style="right: 2%; position: absolute;" data-bs-dismiss="modal">X</button>
+            </div>
+
+            <div class="modal-body" style="overflow: auto;">
+                You are being redirected to Route Planner portal. Continue?
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-danger" data-bs-dismiss="modal">No</button>
+                <button class="btn btn-success" routerLink="/routePlanner" data-bs-dismiss="modal" (click)="setValuesforRoutePlanner()">Yes</button>
+            </div>
+        </div>
