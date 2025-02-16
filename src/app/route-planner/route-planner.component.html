@@ -105,14 +105,14 @@
                             data-bs-toggle="collapse" [attr.data-bs-target]="'#panelsStayOpen-collapseOne-' + i"
                             aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
                             <span>Boarding at <strong>{{item[1]}}</strong>, deboarding at <strong>{{item[2]}}</strong> <br> <i>(via route: <strong>{{item[0][0][0][0]}} -
-                                    {{item[0][0][item[0][0].length -2][0]}})</strong></i></span>
+                                    {{item[0][0][item[0][0].length -2][0]}}</strong>)</i></span>
                         </button>
                         } @else {
                         <button class="accordion-button collapsed" style="background-color: aliceblue;" type="button" data-bs-toggle="collapse"
                             [attr.data-bs-target]="'#panelsStayOpen-collapseOne-' + i" aria-expanded="false"
                             aria-controls="panelsStayOpen-collapseOne">
                             <span>Boarding at <strong>{{item[1]}}</strong>, deboarding at <strong>{{item[2]}}</strong> <br> <i>(via route: <strong>{{item[0][0][0][0]}} -
-                                {{item[0][0][item[0][0].length -1][0]}})</strong></i></span>
+                                {{item[0][0][item[0][0].length -1][0]}}</strong>)</i></span>
                         </button>
                         }
                     </h2>
