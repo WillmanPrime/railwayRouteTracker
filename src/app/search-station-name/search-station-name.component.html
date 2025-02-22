@@ -64,6 +64,49 @@
         </tbody>
     </table>
 </div>
+@if ((this.location === 'Europe' || this.location === 'Americas') && feederLines.length > 0) {
+    <div class="feeder-route" [ngStyle]="{'width': !collapsed ? '80%'  : '90%'}">
+        <h3 style=" margin-bottom: 2rem;">Feeder Routes:</h3>
+        <div class="accordion" style="margin: auto;" [ngStyle]="{'width': !collapsed ? '70%'  : '90%'}" id="accordionPanelsStayOpenExample">
+            @for (item of feederLines; track item; let i = $index) {
+                <div class="accordion-item" style="padding-bottom: 5px;">
+                    <h2 class="accordion-header"  id="panelsStayOpen-headingOne-{{i}}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#panelsStayOpen-collapseOne-' + i" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                            <strong>{{feederLines[i][0]}} - {{feederLines[i][feederLines[i].length-1]}}</strong>
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne-{{i}}" class="accordion-collapse collapse" aria-labelledby="'panelsStayOpen-headingOne'+i">
+                      <div class="accordion-body" style="overflow: auto;">
+                        <table class="table " style="border-left: 2px;">
+                          <tbody>
+                            <tr>
+                              @for (val of feederLines[i]; track val; let j=$index) {
+                                  @if (j%2 === 0) {
+                                    <td [ngStyle]="{'color': val === stationName ? 'red': ''}">{{val}}</td>
+                                  } @else {
+                                    <td></td>
+                                  }
+                              }
+                            </tr>
+                            <tr>
+                              @for (val of feederLines[i]; track val; let j=$index) {
+                                  @if (j%2 === 1) {
+                                    <td [ngStyle]="{'color': val === stationName ? 'red': ''}">{{val}}</td>
+                                  } @else {
+                                    <td></td>
+                                  }
+
+                              }
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                </div>
+            }
+          </div>
+    </div>
+}
 <div class="modal fade" id="routeModal" tabindex="-1" role="dialog" aria-labelledby="stationNameModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl" role="document">

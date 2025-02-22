@@ -19,16 +19,36 @@ export class SearchStationNameComponent {
   stationList: any = [];
   tempTable = [];
   tempTableArr: any = [];
+  feederLines: any = [];
   constructor(private act: ActivatedRoute, private serv: ServicesService, private router: Router) {
     this.act.params.subscribe({
       next: (res: any)=> {
         this.stationName = res.id;
         this.location = res.loc;
         this.getStationData();
+        this.getFeederData();
       }, error: (err: any)=> {
         this.router.navigate(['/home']);
       }
-    })
+    });
+  }
+
+  getFeederData() {
+    if (this.location === 'Europe' || this.location === 'Americas') {
+      this.serv.getUCandFeederLines(this.location + 'Feeder').subscribe({
+          next: (res1: any)=> {
+            this.feederLines = [];
+          for (let val of res1.line) {
+            if (val.includes(this.stationName)) {
+              this.feederLines.push(val);
+            }
+          }
+          console.log('feed', this.feederLines)
+        }, error: (err: any)=> {
+          this.router.navigate(['/home']);
+        }
+      });
+    }
   }
 
   getStationData() {
