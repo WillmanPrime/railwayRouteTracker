@@ -145,7 +145,7 @@
                 ["Diamond Park", "IIM Calcutta", "Joka", "Thakurpukur", "Sakher Bazar", "Behala Chowrasta", "Behala Bazar", "Taratala", "Majherhat", "Mominpur", "Khidirpur", "Victoria", "Park Street", "Esplanade", "Eden Gardens", "#a020f0", "Yes"],
                 ["Kavi Subhash (New Garia)", "Satyajit Ray", "Jyotirindra Nandi (Mukundpur)", "Kavi Sukanta (Kalikapur)", "Hemanta Mukhopadhyay (Ruby More)", "VIP Bazar", "Ritwik Ghatak (Bantala Road)", "Barun Sengupta (Science City)", "Beleghata", "Gour Kishore Ghosh (Chingrighata)", "IT Centre", "Nabadiganta", "Nazrul Tirtha", "Swapnabhor", "Biswa Bangla Convention Centre", 
                 "Shiksha Tirtha", "Mother's Wax Museum", "Eco Park", "Mangaldeep", "City Centre-2", "Chinar Park", "VIP Road", "Jai Hind", "#ffa500", "Yes"],
-                ["Noapara", "Dumdum Cantonment", "Jessore Road", "Jai Hind", "Birati", "Michael Nagar", "New Barrackpur", "Madhyamgram", "Hridaypur", "Barasat", "#ffde21", "No"],
+                ["Noapara", "Dumdum Cantonment", "Jessore Road", "Jai Hind", "Birati", "Michael Nagar", "New Barrackpur", "Madhyamgram", "Hridaypur", "Barasat", "#e5cf00", "No"],
                 ["Baranagar", "Krishna Kali", "Acharya Prafulla Chandra", "Gandhi Ashram", "Sarat Chandra", "Subhas Nagar", "Rishi Bankim", "Dr. Rajendra Prasad", "Shah Nawaz Khan", "Talpukur", "Mangal Pandey" , "#ff66cc", "No"]
             ]
         },
@@ -159,15 +159,17 @@
                 },
                 {
                     "Madavara": "N", "Chikkabidarakallu": "N", "Manjunath Nagar": "N", "Nagasandra": "N", "Dasarahalli": "N", "Jalahalli": "N", "Peenya Industry": "N", "Peenya": "N", "Goraguntepalya": "N", "Yeshvanthpura": "N", "Sandal Soap Factory": "N", "Mahalakshmi": "N", "Rajajinagara": "N", "Mahakavi Kuvempu Road": "N",
-                    "Srirampura": "N", "Mantri Square Sampige Road": "N", "Nadaprabhu Kempegowda Station, Majestic":"Y", "Chickpete": "N", "Krishna Rajendra Market": "N", "National College": "N", "Lalbagh": "N", "South End Cirle": "N", "Jayanagar": "N", "Rashtreeya Vidyalaya Road": "N", "Banashankari": "N",
+                    "Srirampura": "N", "Mantri Square Sampige Road": "N", "Nadaprabhu Kempegowda Station, Majestic":"Y", "Chickpete": "N", "Krishna Rajendra Market": "N", "National College": "N", "Lalbagh": "N", "South End Cirle": "N", "Jayanagar": "N", "Rashtreeya Vidyalaya Road": "Y", "Banashankari": "N",
                     "Jaya Prakash Nagar": "N", "Yelachenahalli": "N", "Konanakunte Cross": "N", "Doddakallasandra": "N", "Vajarahalli": "N", "Thalaghattapura": "N", "Silk Institute": "N", "colorCode":"#146c43"
+                },
+                {
+                    "Rashtreeya Vidyalaya Road": "Y", "Ragigudda": "N", "Jayadeva Hospital" : "N", "BTM Layout" : "N", "Central Silk Board" : "N", "Bommanahalli (Roopena Agrahara)" : "N", "Hongasandra (Garvebhavi Palya)" : "N", "Kudlu Gate" : "N", "Singasandra" : "N", "Hosa Road" : "N", "Beratena Agrahara" : "N", "Electronics City" : "N", 
+                    "Infosys Foundation Konappana Agrahara" : "N", "Huskur Road" : "N", "Biocon Hebbagodi" : "N", "Delta Electronics Bommasandra" : "N", "colorCode"  : "#e5cf00"
                 }
             ]
         },
         {
             "line": [
-                ["Rashtreeya Vidyalaya Road", "Ragigudda", "Jayadeva Hospital", "BTM Layout", "Central Silk Board", "Bommanahalli (Roopena Agrahara)", "Hongasandra (Garvebhavi Palya)", "Kudlu Gate", "Singasandra", "Hosa Road", "Beratena Agrahara", "Electronics City", "Infosys Foundation Konappana Agrahara", "Huskur Road",
-                "Biocon Hebbagodi", "Delta Electronics Bommasandra", "#ffde21", "No"],
                 ["Nagawara", "Kadugundanahalli", "Venkateshpura", "Tannery Road", "Pottery Town", "Cantonment Railway Station", "Shivajinagar", "Mahatma Gandhi Road", "National Military School", "Langford Town", "Lakkasandra", "Dairy Circle", "Tavarekere", "Jayadeva Hospital", "JP Nagar 4th Phase", "IIMB", "Hulimavu",
                 "Kalena Agrahara", "#ff66cc", "No" ],
                 ["Central Silk Board", "HSR Layout", "Agara", "Ibbaluru", "Bellanduru", "Kadubeesanahalli", "Kodibeesanahalli", "Marathahalli", "ISRO", "Doddanekundi", "DRDO Sports Complex", "Saraswathi Nagar", "Krishnarajapura", "Kasturi Nagar", "Horamavu", "HRBR Layout", "Kalyan Nagar", "HBR Layout", "Nagawara",
